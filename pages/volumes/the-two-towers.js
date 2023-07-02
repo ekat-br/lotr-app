@@ -1,4 +1,4 @@
-import { volumes } from "@/resources/lib/data";
+import { volumes } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 export default function Volume() {
