@@ -2,7 +2,7 @@ import { volumes } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-export default function Volume() {
+export default function VolumeDetails() {
   const router = useRouter();
   const { volumeID } = router.query;
 
@@ -10,7 +10,6 @@ export default function Volume() {
 
   const volumeIndex = volumes.findIndex(({ slug }) => slug === volumeID);
 
-  //const volume = volumes[volumeIndex];
   const nextVolume = volumes[volumeIndex + 1];
   const previousVolume = volumes[volumeIndex - 1];
 
