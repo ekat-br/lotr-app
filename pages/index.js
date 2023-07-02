@@ -1,4 +1,4 @@
-import Overview from "./volumes/overview";
+import Overview from "./volumes";
 
 export default function HomePage() {
   return (
