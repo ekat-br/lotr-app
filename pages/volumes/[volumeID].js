@@ -1,12 +1,16 @@
 import { volumes } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 export default function Volume() {
-  const volumeIndex = volumes.findIndex(
-    ({ slug }) => slug === "the-return-of-the-king"
-  );
+  const router = useRouter();
+  const { volumeID } = router.query;
 
-  const volume = volumes[volumeIndex];
+  const volume = volumes.find(({ slug }) => slug === volumeID);
+
+  const volumeIndex = volumes.findIndex(({ slug }) => slug === volumeID);
+
+  //const volume = volumes[volumeIndex];
   const nextVolume = volumes[volumeIndex + 1];
   const previousVolume = volumes[volumeIndex - 1];
 
