@@ -1,5 +1,6 @@
 import { volumes } from "@/resources/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 export default function Volume() {
   const volumeIndex = volumes.findIndex(
     ({ slug }) => slug === "the-return-of-the-king"
@@ -27,6 +28,12 @@ export default function Volume() {
           </li>
         ))}
       </ul>
+      <Image
+        src={cover}
+        alt={`Cover image of ${title}`}
+        width={140}
+        height={230}
+      ></Image>
       <div>
         {previousVolume ? (
           <Link href={`/volumes/${previousVolume.slug}`}>
