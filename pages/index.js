@@ -1,9 +1,10 @@
-import Overview from "./volumes";
+import Link from "next/link";
+import { GlobalStyles } from "@/styles";
 
 export default function HomePage() {
   return (
-    <div>
-      <h1>Hello coders!</h1>
-    </div>
+    <>
+      <Link href="/volumes">Go to all volumes</Link>
+    </>
   );
 }
