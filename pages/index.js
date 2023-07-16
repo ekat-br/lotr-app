@@ -30,7 +30,7 @@ export default function HomePage() {
     <>
       <VolumesHeadline1>Lord of the Rings App</VolumesHeadline1>
       <VolumesIntroText>
-        Hi, this is a small fanpage of the book series "Lord of the Rings".
+        Hi, this is a small fanpage of the book series Lord of the Rings.
         Currently the website is still in the final polish. But you can already
         have a look around.
       </VolumesIntroText>
