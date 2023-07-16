@@ -17,6 +17,10 @@ export default function VolumeDetails() {
 
   const { title, description, cover, books, color } = volume;
 
+  if (!volume) {
+    return <div>Volume not found.</div>;
+  }
+
   const VolumeContainer = styled.div`
     display: flex;
     padding: 48px 0px;
