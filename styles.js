@@ -15,8 +15,7 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: system-ui;
-    background-color: red; 
+    font-family: var(--font-family)
   }
 
   :root {
