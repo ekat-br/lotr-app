@@ -16,6 +16,7 @@ export default createGlobalStyle`
   body {
     margin: 0;
     font-family: var(--font-family)
+    background-color: var(--color-clouds)
   }
 
   :root {

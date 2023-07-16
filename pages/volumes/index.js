@@ -30,7 +30,7 @@ export default function Volumes() {
     font: var(--font-headline-2);
   `;
 
-  const VolumesIntro = styled.article`
+  const VolumesIntro = styled.div`
     display: flex;
     padding: 0px 32px;
     flex-direction: column;
@@ -69,6 +69,12 @@ export default function Volumes() {
     align-items: flex-start;
     align-self: stretch;
     flex-wrap: wrap;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      #ffffff;
   `;
 
   const VolumesIntroItem = styled.li`
@@ -83,6 +89,8 @@ export default function Volumes() {
     align-items: center;
     text-align: center;
     gap: 12px;
+    text-decoration: none;
+    color: var(--color-earth);
   `;
 
   return (
