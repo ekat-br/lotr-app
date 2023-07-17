@@ -36,6 +36,12 @@ export default function VolumeDetails() {
     align-items: center;
     align-self: stretch;
     background-color: ${(props) => props.color};
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 100%
+      ),
+      ${(props) => props.color};
   `;
 
   const VolumesHeadline1 = styled.h1`
