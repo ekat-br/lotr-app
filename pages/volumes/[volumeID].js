@@ -15,11 +15,11 @@ export default function VolumeDetails() {
   const nextVolume = volumes[volumeIndex + 1];
   const previousVolume = volumes[volumeIndex - 1];
 
-  const { title, description, cover, books, color } = volume;
-
   if (!volume) {
     return <div>Volume not found.</div>;
   }
+
+  const { title, description, cover, books, color } = volume;
 
   const VolumeContainer = styled.div`
     display: flex;
